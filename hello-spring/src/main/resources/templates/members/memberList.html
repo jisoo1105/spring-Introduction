@@ -11,13 +11,14 @@
                 <thead>
                     <tr>
                         <th>#</th>
-                        <th>이름</th>
+                        <th>이름<br></th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr th:each="member : ${members}">
                         <td th:text="${member.id}"></td> <!-- getter setter에 접근을 한다-->
                         <td th:text="${member.name}"></td>
+                        <td><br></td>
                     </tr>
                 </tbody>
             </talbe>
